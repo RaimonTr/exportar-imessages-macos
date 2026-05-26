@@ -27,16 +27,34 @@ Interactive script to export Messages conversations on macOS to printable HTML, 
 macOS with:
 
 - Python 3
-- SQLite available on the system
-- Swift available on the system
-- The conversation synchronized locally in the Messages app
-- Full Disk Access for the terminal app being used
+- SQLite
+- Swift
+- The conversation synced locally in the Messages app
+- Full Disk Access enabled for the terminal app being used
 
-If a permissions error appears when opening `chat.db`, you must grant Full Disk Access to Terminal, iTerm, or another terminal app:
+On most macOS installations, SQLite is already available.
+
+Python 3 and Swift may already be available depending on the system setup. You can check with:
+
+`python3 --version`
+
+`sqlite3 --version`
+
+`swift --version`
+
+If `python3` is missing, install it for example with Homebrew:
+
+`brew install python`
+
+If `swift` is missing, install Apple Command Line Tools:
+
+`xcode-select --install`
+
+If you get a permission error when opening `chat.db`, grant Full Disk Access to Terminal, iTerm, or whichever terminal app you are using:
 
 `System Settings > Privacy & Security > Full Disk Access`
 
-Find the corresponding app and enable it.
+Find the relevant terminal app and enable it.
 
 ## Usage
 
