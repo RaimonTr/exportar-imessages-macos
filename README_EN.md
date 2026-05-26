@@ -4,7 +4,7 @@ Interactive script to export Messages conversations on macOS to printable HTML, 
 
 ## Before you start
 
-To force Messages to download an entire conversation —or as much of it as it can recover— scroll all the way back to the beginning of the conversation, to the very first message. This helps ensure that the files are downloaded locally.
+To make Messages download the full conversation locally — or as much of it as it can still retrieve — scroll all the way back to the beginning of the conversation, to the very first message. This helps ensure that messages and attachments are available before running the exporter.
 
 ## What it does
 
