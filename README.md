@@ -27,15 +27,34 @@ Script interactivo para exportar conversaciones de Mensajes/Messages en macOS a 
 macOS con:
 
 - Python 3
-- SQLite disponible en el sistema
-- Swift disponible en el sistema
+- SQLite
+- Swift
 - La conversación sincronizada localmente en la app Mensajes/Messages
-- Acceso total al disco para la app de terminal usada
+- Acceso total al disco para la app de terminal utilizada
 
-Si aparece un error de permisos al abrir "chat.db", hay que dar Acceso total al disco a Terminal, iTerm u otra app de terminal:
+En la mayoría de instalaciones de macOS, SQLite ya está disponible.
 
-"Ajustes del Sistema > Privacidad y seguridad > Acceso total al disco". Buscas la app que corresponda y la activas.
+Python 3 y Swift pueden estar ya disponibles según la configuración del sistema. Puedes comprobarlo con:
 
+`python3 --version`
+
+`sqlite3 --version`
+
+`swift --version`
+
+Si falta `python3`, puedes instalarlo, por ejemplo, con Homebrew:
+
+`brew install python`
+
+Si falta `swift`, instala las herramientas de línea de comandos de Apple:
+
+`xcode-select --install`
+
+Si aparece un error de permisos al abrir `chat.db`, hay que dar Acceso total al disco a Terminal, iTerm u otra app de terminal que estés usando:
+
+`Ajustes del Sistema > Privacidad y seguridad > Acceso total al disco`
+
+Busca la app correspondiente y actívala.
 ## Uso
 
 Ejecutar: ```python3 export-messages-macos.py```
